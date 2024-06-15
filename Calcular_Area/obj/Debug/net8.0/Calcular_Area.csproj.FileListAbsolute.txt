@@ -1,0 +1,4 @@
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Calcular_Area\obj\Debug\net8.0\Calcular_Area.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Calcular_Area\obj\Debug\net8.0\Calcular_Area.AssemblyInfoInputs.cache
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Calcular_Area\obj\Debug\net8.0\Calcular_Area.AssemblyInfo.cs
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Calcular_Area\obj\Debug\net8.0\Calcular_Area.csproj.CoreCompileInputs.cache

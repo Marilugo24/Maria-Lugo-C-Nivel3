@@ -1,0 +1,4 @@
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Convertidor_Temperatura\obj\Debug\net8.0\Convertidor_Temperatura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Convertidor_Temperatura\obj\Debug\net8.0\Convertidor_Temperatura.AssemblyInfoInputs.cache
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Convertidor_Temperatura\obj\Debug\net8.0\Convertidor_Temperatura.AssemblyInfo.cs
+C:\Users\Maria\OneDrive\Documentos\Maria_LugoC#Nivel3\Convertidor_Temperatura\obj\Debug\net8.0\Convertidor_Temperatura.csproj.CoreCompileInputs.cache
