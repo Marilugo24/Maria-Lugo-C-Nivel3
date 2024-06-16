@@ -1,57 +1,45 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-double fahrenheit;
-double celsius;
-double kelvin;
-
-double CelsiusAFahrenheit(double celsius) 
+static double CelsiusAFahrenheit(double celsius)
 {
-    return fahrenheit = (9.0 / 5.0) * celsius + 32;
+    return (celsius * 9 / 5) + 32;
+}
+static double FahrenheitACelsius(double fahrenheit)
+{
+    return (fahrenheit - 32) * 5 / 9;
+}
+static double CelsiusAKelvin(double celsius)
+{
+return celsius + 273.15;
 }
 
-double FahrenheitACelsius(double fahrenheit) 
-{
-    return (5.0 / 9.0) * (fahrenheit - 32);
-}
+Console.WriteLine("Convertidor de Temperatura, elije la opcion que deseas convertir:");
+Console.WriteLine("1. Celsius a Fahrenheit");
+Console.WriteLine("2. Fahrenheit a Celsius");
+Console.WriteLine("3. Celsius a Kelvin");
 
-double CelsiusAKelvin(double celsius) 
-{
-    return celsius + 273.15;
-}
+int opcion = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Convertidor de Temperatura, elije la opcion que deseas convertir");
-Console.WriteLine("1. Celsius");
-Console.WriteLine("2. Fahrenheit");
-Console.WriteLine("3. Kelvin");
+Console.Write("Ingresa la temperatura: ");
+double temperatura = double.Parse(Console.ReadLine());
 
-int opcion = Convert.ToInt32(Console.ReadLine());
+double resultado = 0;
 
 switch (opcion)
 {
     case 1:
-
-        Console.WriteLine("Ingrese la temperatura en Celsius:");
-        double gradoscelcius = Convert.ToDouble(Console.ReadLine());
-       
+        resultado = CelsiusAFahrenheit(temperatura);
+        Console.WriteLine($"La temperatura en Fahrenheit es: {resultado} °F");
         break;
     case 2:
-        Console.WriteLine("Ingresa la temperatura en Fahrenheit:");
-        double gradosfahrenheit = Convert.ToDouble(Console.ReadLine());
+        resultado = FahrenheitACelsius(temperatura);
+        Console.WriteLine($"La temperatura en Celsius es: {resultado} °C");
         break;
     case 3:
-        Console.WriteLine("Ingrese la temperatura en celcius:");
-        double gradoskelvin = Convert.ToDouble(Console.ReadLine());
+        resultado = CelsiusAKelvin(temperatura);
+        Console.WriteLine($"La temperatura en Kelvin es: {resultado} K");
         break;
     default:
-        Console.WriteLine("Opción no válida.");
+        Console.WriteLine("Opción inválida. Inténtalo nuevamente.");
         break;
 }
-
-FahrenheitACelsius(fahrenheit);
-Console.WriteLine($"{fahrenheit} grados Fahrenheit corresponden a {celsius} grados Celsius.");
-
-CelsiusAKelvin(celsius);
-Console.WriteLine($"{celsius} grados Celsius son {kelvin} grados Kelvin.");
-
-CelsiusAFahrenheit(celsius);
-Console.WriteLine($"{celsius} grados Celsius son {fahrenheit} grados fahrenheit.");
